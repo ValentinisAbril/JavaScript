@@ -115,6 +115,35 @@
     <p>Este tipo de función se creará con la palabra reservada function, seguido obligatoriamente por un nombre, que identificará a nuestra función, una lista de parámetros entre paréntesis, y el símbolo de las llaves {}. Qué será el que delimite el contenido de nuestro conjunto de sentencias.
         La lista de parámetros cuando creamos una función no es obligatoria, podemos definir una función sin parámetros.</p>
     <img src="imagenes/ejemplo_function.jpg">
-    
+    <ul>
+        <li><b>Function expression.</b></li>
+    </ul>
+    <p>La única diferencia es que la definición de nuestra nueva función no comienza por instrucción function y el nombre de la función es opcional.
+        Este tipo de funciones las podemos almacenar en una variable.
+     </p>
+    <img src="imagenes/ejemplo_function2.jpg">
+    <ul>
+        <li><b>IIFE (Immediately Invoked Function Expression)</b></li>
+    </ul>
+    <p>Este tipo de funciones se ejecutan inmediatamente y no son accesibles posteriormente.
+        Para crear una función de este tipo deberemos crearla en un operador de agrupación (). Seguido de (), lo que posibilitará el interpretado directamente en el motor de JavaScript.
+    </p>
+    <img src="imagenes/ejemplo_function3.jpg">
+    <p>Al definir nuestra función dentro de un operador de agrupación no permitimos acceder a variables fuera del IIFE, así como no "contaminar" el scope global.
+    </p>
+    <ul>
+        <li><b>Shorthand method definition.</b></li>
+    </ul>
+    <p>Esta forma de crear las funciones puede ser utilizado como método en la declaración de un objeto o en las clases de ES6.
+        Para crear este tipo de función debemos asignar un nombre de función seguido de una lista de parámetros entre paréntesis y los símbolos de llaves para delimitar el cuerpo de las instrucciones.
+    </p>
+    <p><b>Arrow function.</b></p>
+    <ul>
+        <li>Las "arrow function" no crean su propio contexto al ejecutarse. Al contrario que las "function expression" o las "function declaration" que crea su propio contexto.</li>
+        <li>Las "arrow function" son anónimas.</li>
+        <li>El objeto arguments no se encuentra en el contexto de la función.
+        </li>
+        <li>Si al definir la función no utilizamos el símbolo de las llaves. La función devolverá como resultado de la función el resultado de la ejecución de la instrucción que hayamos indicado.</li>
+    </ul>
 </body>
 </html>
