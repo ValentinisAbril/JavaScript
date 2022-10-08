@@ -146,5 +146,67 @@
         <li>Si al definir la función no utilizamos el símbolo de las llaves. La función devolverá como resultado de la función el resultado de la ejecución de la instrucción que hayamos indicado.</li>
     </ul>
     <h3>5) ¿Cuáles son los operadores y conversión entre tipos?.</h3>
+    <p><b>JavaScript cuenta con los siguientes tipos de operadores:</b></p>
+    <ul>
+        <li><b>Operadores de asignación</b></li>
+    </ul>
+    <p>Un operador de asignación asigna un valor a su operando izquierdo basándose en el valor de su operando derecho. El operador de asignación simple es igual (=), que asigna el valor de su operando derecho a su operando izquierdo. Es decir, x = y asigna el valor de y a x.
+    </p>
+    <p>Para asignaciones más complejas, la sintaxis de asignación de desestructuración es una expresión de JavaScript que hace posible extraer datos de arreglos u objetos usando una sintaxis que refleja la construcción de arreglos y objetos literales. Como por ejemplo:
+    </p>
+    <img src="imagenes/ejemplo_operadores.jpg">
+    <ul>
+        <li><b>Operadores de comparación</b></li>
+    </ul>
+    <p>Un operador de comparación compara sus operandos y devuelve un valor lógico en función de si la comparación es verdadera (true) o falsa (false). Los operandos pueden ser valores numéricos, de cadena, lógicos u objetos. Las cadenas se comparan según el orden lexicográfico estándar, utilizando valores Unicode. En la mayoría de los casos, si los dos operandos no son del mismo tipo, JavaScript intenta convertirlos a un tipo apropiado para la comparación. Este comportamiento generalmente resulta en comparar los operandos numéricamente.
+    </p>
+    <ul>
+        <li><b>Operadores aritméticos</b></li>
+    </ul>
+    <p>Un operador aritmético toma valores numéricos (ya sean literales o variables) como sus operandos y devuelve un solo valor numérico. Los operadores aritméticos estándar son suma (+), resta (-), multiplicación (*) y división (/). 
+    </p>
+    <ul>
+        <li><b>Operadores bit a bit</b></li>
+    </ul>
+    <p>Un operador bit a bit trata a sus operandos como un conjunto de 32 bits (ceros y unos), en lugar de números decimales, hexadecimales u octales. Por ejemplo, el número decimal nueve tiene una representación binaria de 1001. Los operadores bit a bit realizan sus operaciones en tales representaciones binarias, pero devuelven valores numéricos estándar de JavaScript.
+    </p>
+    <ul>
+        <li><b>Operadores de desplazamiento de bits</b></li>
+    </ul>
+    <p>Los operadores de desplazamiento bit a bit toman dos operandos: el primero es una cantidad que se va a desplazar y el segundo especifica el número de posiciones de bit por las que se va a desplazar el primer operando. La dirección de la operación de desplazamiento es controlada por el operador utilizado.
+    </p>
+    <ul>
+        <li><b>Operadores lógicos</b></li>
+    </ul>
+    <p>Los operadores lógicos se utilizan normalmente con valores booleanos (lógicos); cuando lo son, devuelven un valor booleano. Sin embargo, los operadores && y || en realidad devuelven el valor de uno de los operandos especificados, por lo que si estos operadores se utilizan con valores no booleanos, pueden devolver un valor no booleano.
+    </p>
+    <ul>
+        <li><b>Operadores de cadena</b></li>
+    </ul>
+    <p>Además de los operadores de comparación, que se pueden usar en valores de cadena, el operador de concatenación (+) concatena dos valores de cadena, devolviendo otra cadena que es la unión de los dos operandos de cadena.
+    </p>
+    <b>por ejemplo:</b>
+    <p>console.log('mi ' + 'cadena'); // la consola registra la cadena "mi cadena".</p>
+    <p>El operador de asignación abreviada += también se puede utilizar para concatenar cadenas.</p>
+    <ul>
+        <li><b>Operador coma</b></li>
+    </ul>
+    <p>El operador coma (,) simplemente evalúa ambos operandos y devuelve el valor del último operando. Este operador se utiliza principalmente dentro de un bucle for, para permitir que se actualicen múltiples variables cada vez a través del bucle. Se considera de mal estilo usarlo en otros lugares, cuando no es necesario. A menudo, en su lugar pueden y se deben utilizar dos declaraciones independientes.
+    </p>
+    <ul>
+        <li><b>Operadores relacionales</b></li>
+    </ul>
+    <p>Un operador relacional compara sus operandos y devuelve un valor Boolean basado en si la comparación es verdadera.</p>
+    <ul>
+        <li><b>Conversiones de Tipos</b></li>
+    </ul>
+    <p>La mayoría de las veces, los operadores y funciones convierten automáticamente los valores que se les pasan al tipo correcto. Esto es llamado “conversión de tipo”.
+        Por ejemplo, alert convierte automáticamente cualquier valor a string para mostrarlo. Las operaciones matemáticas convierten los valores a números.
+        Las tres conversiones de tipo más usadas son a string, a número y a boolean.
+    <ul>
+        <li><b>ToString</b> Ocurre cuando se muestra algo. Se puede realizar con String(value). La conversión a string es usualmente obvia para los valores primitivos</li>
+        <li><b>ToNumber</b> Ocurre en operaciones matemáticas. Se puede realizar con Number(value).</li>
+    </ul>
+    </p>
 </body>
 </html>
